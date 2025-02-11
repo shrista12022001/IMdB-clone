@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "IMDB Clone",
-  description: "This is an app for Movies",
+  description: "This is an app for Movies databse clone",
 };
 
 export default function RootLayout({ children }) {
