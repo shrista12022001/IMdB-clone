@@ -1,4 +1,4 @@
-"use client"; // Ensure it's a client component
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
@@ -8,12 +8,11 @@ export default function DarkModeSwitch() {
   const { theme, setTheme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  // Ensure the component is mounted before rendering
+ 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Prevents hydration mismatch
   if (!mounted) return null;
 
   const currentTheme = theme === "system" ? systemTheme : theme;
