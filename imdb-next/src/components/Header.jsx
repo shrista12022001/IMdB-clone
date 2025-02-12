@@ -10,7 +10,7 @@ export default function Header() {
     <div className='flex  justify-between items-center p-3 max-w-6xl mx-auto'>
         <div className='flex gap-4 justify-between'>
             <MenuItem title="home" address="/" Icon={ AiFillHome }/>
-            <MenuItem title="about" address="/" Icon={BsFillInfoCircleFill}/>
+            <MenuItem title="about" address="/about" Icon={BsFillInfoCircleFill}/>
         </div>
         
         <div className="flex gap-4 items-center">
